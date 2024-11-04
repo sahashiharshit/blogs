@@ -1,0 +1,16 @@
+#blogPost {
+  background-color: aliceblue;
+  padding: 2rem;
+}
+#blogName {
+    margin-top: 1rem;
+  padding: 1rem;
+}
+#author {
+    margin-top: 1rem;
+  padding: 1rem;
+}
+#content {
+    margin-top: 1rem;
+  padding: 1rem;
+}

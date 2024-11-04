@@ -35,8 +35,8 @@ async function loadBlogs() {
         <p>${blog.blogContent}</p>
         <h4>Comments</h4>
         <div id="comments-${blog.id}"></div>
-        <input id="commentContent-${blog.id}" placeholder="Write a comment">
-        <button onclick="addComment(${blog.id})">Comment</button>
+        <input id="commentContent-${blog.id}" placeholder="Write a comment" class="form-control">
+        <button onclick="addComment(${blog.id})" class="btn btn-primary">Comment</button>
       `;
     container.appendChild(blogCard);
     loadComments(blog.id); // Load existing comments for each blog
@@ -71,7 +71,7 @@ async function loadComments(blogId) {
     commentDiv.className = "comment";
     commentDiv.innerHTML = `
         <p>${comment.commentContent}</p>
-        <button onclick="deleteComment(${comment.id})">Delete</button>
+        <button onclick="deleteComment(${comment.id})" class ="btn btn-danger">Delete</button>
       `;
     commentsContainer.appendChild(commentDiv);
   });
