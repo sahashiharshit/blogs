@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog App</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .blog-card { border: 1px solid #ccc; padding: 15px; margin: 10px 0; }
+    .comment { margin-top: 10px; padding: 5px; border: 1px solid #ccc; }
+  </style>
+  
+</head>
+<body>
+  <h1>Create a Blog</h1>
+  <form id="blogPost">
+    <input id="blogName" placeholder="Blog Name" required>
+  <input id="author" placeholder="Author Name" required>
+  <textarea id="content" placeholder="Content" required></textarea>
+  <button type="submit">Post Blog</button>
+
+  </form>
+  
+  <h2>Blogs</h2>
+  <div id="blogsContainer"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
